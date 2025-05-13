@@ -170,6 +170,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 .upcoming-section-images-container div {
   max-width: 33%;
@@ -180,12 +181,10 @@ body {
   margin-bottom: 40px;
 }
 .upcoming-section-images-container h3 {
-  text-align: center;
   font-family: var(--notosans-font);
   margin-bottom: 15px;
 }
 .upcoming-section-images-container p {
-  text-align: center;
   font-size: 16px;
   font-family: var(--notosans-font);
   color: var(--navyblue-color);
@@ -332,7 +331,6 @@ body {
   grid-template-columns: 1fr 1fr;
   row-gap: 15px;
   column-gap: 30px;
-  max-width: 80%;
   margin-bottom: 6.9rem;
 }
 .tour-images img {
@@ -382,10 +380,7 @@ body {
     height: 80vh;
   }
   .quote-paragraph-div{
-    display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
   }
   .quote-paragraph-div img {
     max-width: 8%;
@@ -395,11 +390,6 @@ body {
   }
   .quote-paragraph-author {
     margin-top: 25px;
-  }
-  .upcoming-section-images-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
   .upcoming-section-images-container div {
     max-width: 40%;
@@ -411,18 +401,12 @@ body {
     width: 100%
   }  
   .tour-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .tour-images img{
     max-width: 50vh;
   }
-  .tour-description {
-    margin-top: -16.8rem;
-  } 
   .tour-images img:nth-of-type(3){
     margin-top: -65px;
     height: 42vh;
@@ -430,12 +414,6 @@ body {
 }
 
 @media (max-width:1024px) {
-  .upcoming-section-images-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
   .upcoming-section-images-container div{
     max-width: 40%;
   }
@@ -462,9 +440,6 @@ body {
   .tour-images img{
     width: 40vh
   }
-  .tour-description {
-    margin-top: -4.8rem;
-  } 
   .tour-description h1 {
     font-size: 23px;
   }
@@ -479,22 +454,19 @@ body {
     height: 30vh;
   }
   .tour-images img:nth-of-type(3) {
-  margin-top: -4.0rem;
   height: 35vh;
   }
 }
 
 @media (max-width:834px){
-  .navbar-section div img {
-    position: relative;
-    top: 10px;
-    right: -50px;
-    width: 45%
+  .navbar-section {
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .navbar-section div i {
     position: relative;
     top: 10px;
-    right: 15px
+    right: 50px
   }
   .hero-section {
     height: 65vh;
@@ -509,31 +481,22 @@ body {
     font-size: 20px;
   }
   .quote-paragraph-div{
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
   .quote-paragraph-div h3 {
     text-align: center;
   }
   .upcoming-section-images-container {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
   .upcoming-section-images-container div {
-    max-width: 90%;
+    /* max-width: 70%; */
   }
   .upcoming-section-images-container img{
     max-width: 90vh;
     margin-bottom: 10px;
   }
   .upcoming-section-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
     margin-bottom: -60px;
   }
   .explore-section-container {
@@ -544,7 +507,6 @@ body {
     margin-top: -60px;
   }
   .tour-section {
-    display: flex;
     flex-direction: column;
   }
   .tour-description {
@@ -561,7 +523,7 @@ body {
     margin-bottom: 50px;  
   } 
   .tour-images img {
-    max-width: 100%
+    max-width: 100%;
   }
   .tour-images img:nth-of-type(1) {
     height: 70vh;
@@ -594,14 +556,12 @@ body {
 @media (max-width:480px){
   .navbar-section div img {
     position: relative;
-    top: 10px;
-    right: -50px;
-    width: 45%
+    top: 60px;
   }
   .navbar-section div i {
     position: relative;
-    top: 10px;
-    right: 15px
+    left: 150px;
+    top: 10px
   }
   .hero-section {
     height: 80vh;
@@ -624,14 +584,9 @@ body {
   .upcoming-heading-title div{
     width: 20%;
   }
-  .upcoming-section-images-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .upcoming-section-images-container div {
     max-width: 80%;
+    justify-items: center;
   }  
   .upcoming-section-images-container img {
     max-width: 70vh;
@@ -654,5 +609,27 @@ body {
     height: 30vh;
     font-size: 14px;
     line-height: 22px;
+  }
+}
+
+@media (max-width:390px) {
+   .navbar-section div i {
+    position: relative;
+    top: -5px
+  }
+  .explore-section-container {
+    background-position: 20% center;
+  }
+  .tour-images img:nth-of-type(1) {
+    height: 45vh;
+  }
+  .tour-images img:nth-of-type(2) {
+    height: 45vh;
+  }
+  .tour-images img:nth-of-type(3) {
+    height: 45vh;
+  }
+  .tour-images img:nth-of-type(4) {
+    height: 45vh;
   }
 }
