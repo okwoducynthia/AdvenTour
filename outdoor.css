@@ -490,7 +490,7 @@ body {
     flex-direction: column;
   }
   .upcoming-section-images-container div {
-    /* max-width: 70%; */
+    max-width: 70%;
   }
   .upcoming-section-images-container img{
     max-width: 90vh;
