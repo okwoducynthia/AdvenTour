@@ -163,7 +163,7 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .upcoming-section-images-container div {
   width: 40%;
@@ -544,6 +544,3 @@
   }
 }
 
-@media (max-width: 390px) {
-
-}
